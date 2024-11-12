@@ -1,0 +1,146 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFDD00;
+  color: #FF0000;
+  text-align: center;
+}
+
+header {
+  background-color: #FF0000;
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: #FFF;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.book-now-nav {
+  background-color: #FFF;
+  color: #FF0000;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-nav:hover {
+  background-color: #FFDD00;
+  color: #FF0000;
+}
+
+/* Hero Section with Prominent Book Now Button */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em 0;
+}
+
+.logo-container {
+  margin-bottom: 1em;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.cta-button {
+  background-color: #FF0000;
+  color: #FFF;
+  font-size: 1.8em;
+  padding: 0.8em 1.5em;
+  border: 2px solid #FFF;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+  background-color: #FF4C4C;
+}
+
+/* Section Styles */
+.section {
+  padding: 3em 0;
+}
+
+.about, .episodes, .contact {
+  background-color: #FFF;
+  color: #FF0000;
+  margin: 1em 0;
+  border-radius: 20px;
+  padding: 2em;
+}
+
+h2 {
+  font-family: 'Cooper Black', sans-serif;
+  font-size: 2.5em;
+  color: #FF0000;
+  margin-bottom: 0.5em;
+}
+
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1em;
+}
+
+.episode-card {
+  background-color: #FFDD00;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+input, textarea {
+  padding: 0.8em;
+  width: 80%;
+  max-width: 400px;
+  border: 2px solid #FF0000;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+button[type="submit"] {
+  background-color: #FF0000;
+  color: #FFF;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #FF4C4C;
+}
+
+footer {
+  background-color: #FF0000;
+  color: #FFF;
+  padding: 1em;
+  font-size: 0.9em;
+}

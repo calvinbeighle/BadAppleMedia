@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talk Shop Podcasting Studio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Emberly:wght@600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangla+MN:wght@400&display=swap" />
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body {
+        background-color: #000000;
+      }
+      .book-now-button {
+        background-color: #fdee21;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 75%;  /* Shifted down 10% from 65% */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 154px;  /* Reduced by 10% from 171px */
+        height: 55px;  /* Reduced by 10% from 61px */
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        font-family: Bangla MN, var(--default-font-family);
+        font-size: 14px;
+        font-weight: 700;
+        color: #030303;
+        z-index: 6;
+        padding-top:6px; /* Shift text down by adding padding to top */
+      }
+      .img-vector {
+        position: absolute;
+        width: 306px;
+        height: 34%;
+        top: -8.44%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 2;
+      }
+      .img-vector-1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .img-podcast {
+        position: absolute;
+        width: auto;       /* Changed from 100% to auto */
+        min-width: 100%;   /* Added to ensure video is at least as wide as container */
+        height: 100%;      
+        top: 0;
+        left: 50%;        /* Center the video horizontally */
+        transform: translateX(-50%); /* Center the video horizontally */
+        z-index: 3;
+        object-fit: cover; 
+      }
+
+      
+      .copyright {
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        font-family: Bangla MN, var(--default-font-family);
+        font-size: 14px;
+      }
+      .your-space-to-speak {
+        top: 45% !important; /* Shifted down 10% from 35% */
+        font-size: 110px !important;
+        letter-spacing: 3.1px; /* Increase from 100px */
+        line-height: 110px; /* Increased line spacing between lines */
+      }
+      .about, .gallery, .services, .contact {
+        text-decoration: none;
+      }
+      
+      .k-podcast-video {
+        position: fixed;     /* Changed from relative to fixed */
+        width: 100vw;
+        height: 100vh;      /* Changed back to 100vh from 110vh */
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 3;
+        overflow: hidden;
+      }
+      .main-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;   /* This ensures no scrolling */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <img 
+        src="./assets/images/talkshopyellow.png" 
+        alt="Top decorative element"
+        class="img-vector"
+        style="z-index: 999; transform: translate(-50%, 0) scale(0.8);"
+      />
+      
+      <a href="services.html" class="services">SERVICES<br /></a>
+      <a href="contact.html" class="contact">CONTACT<br /></a>
+      <a href="gallery.html" class="gallery">GALLERY<br /></a>
+      <a href="about.html" class="about">ABOUT<br /></a>
+      <div class="k-podcast-video">
+        <video autoplay muted loop class="img-podcast">
+          <source src="./assets/images/PodcastVideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+            
+        <span class="your-space-to-speak">YOUR<br />SPACE TO<br />SPEAK</span>
+        <button class="book-now-button">BOOK NOW</button>
+      </div>
+      <div class="copyright" style="color: #333333;">© 2024 BAD APPLE MEDIA. ALL RIGHTS RESERVED.</div>
+    </div>
+  </body>
+</html>

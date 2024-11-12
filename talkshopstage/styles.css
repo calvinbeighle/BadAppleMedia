@@ -1,0 +1,50 @@
+/* Global Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FF0000; /* Cherry red as the main color */
+  color: #FFFFFF; /* White as the main font color */
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #FF0000; /* Cherry red */
+  padding: 1em 0;
+}
+
+header nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+}
+
+.book-now {
+  background-color: #FFFFFF;
+  color: #FF0000;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 20px;
+  color: #FFFFFF;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.cta-button {
+  background-color: #FFFFFF;
+  color: #FF0000;
+  padding: 0.5em 1.5
